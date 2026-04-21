@@ -3,75 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的 GitHub 主页</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-        .container {
-            text-align: center;
-            padding: 40px;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            animation: fadeIn 1s;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 20px 0;
-            opacity: 0.9;
-        }
-        .links {
-            margin-top: 40px;
-        }
-        .links a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 30px;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s;
-            border: 2px solid rgba(255,255,255,0.3);
-        }
-        .links a:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .emoji {
-            font-size: 4em;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>zhy - 个人主页</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="emoji">👋</div>
-        <h1>你好，世界！</h1>
-        <p>欢迎来到我的 GitHub 个人网站</p>
-        <p>🚀 我正在学习编程和 Git</p>
-        <div class="links">
-            <a href="https://github.com/zhy-zhy321">📱 GitHub</a>
-            <a href="https://github.com/zhy-zhy321/hello-github">📂 我的项目</a>
-            <a href="#" onclick="alert('敬请期待！')">📧 联系我</a>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html" class="nav-logo">👨‍💻 zhy</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">首页</a>
+            <a href="about.html">关于</a>
+            <a href="projects.html">项目</a>
         </div>
-        <p style="margin-top: 50px; opacity: 0.7; font-size: 0.9em;">
-            Built with ❤️ using GitHub Pages
-        </p>
+    </nav>
+
+    <!-- Hero 大标题区 -->
+    <section class="hero">
+        <div>
+            <div style="font-size: 4em; margin-bottom: 20px;">👋</div>
+            <h1>你好，我是 zhy</h1>
+            <p>🚀 正在学习 Git & GitHub 的开发者</p>
+            <p>📍 中国</p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn btn-white">
+                    💼 看看我的项目
+                </a>
+                <a href="about.html" class="btn btn-outline">
+                    👤 了解我
+                </a>
+                <a href="https://github.com/你的用户名" 
+                   class="btn btn-outline" target="_blank">
+                    📱 GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能区域 -->
+    <div style="background: var(--light);">
+        <div class="section">
+            <h2 class="section-title">🛠️ 我正在学习</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🔧 Git & GitHub</h3>
+                    <p>版本控制、分支管理、Pull Request、
+                       开源协作</p>
+                    <div class="tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">版本控制</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>🌐 前端基础</h3>
+                    <p>HTML 结构、CSS 样式、
+                       让网页好看又好用</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">响应式</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>💡 编程思维</h3>
+                    <p>学习如何像程序员一样思考，
+                       解决问题，持续进步</p>
+                    <div class="tags">
+                        <span class="tag">逻辑思维</span>
+                        <span class="tag">问题解决</span>
+                        <span class="tag">持续学习</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- 30天挑战进度 -->
+    <div class="section">
+        <h2 class="section-title">🔥 30天 GitHub 挑战</h2>
+        <div class="card" style="max-width: 600px; margin: 0 auto;">
+            <h3>当前进度：Day 5 / 30</h3>
+            <div style="
+                background: #f0f0f0; 
+                border-radius: 10px; 
+                height: 20px; 
+                margin: 15px 0;
+                overflow: hidden;
+            ">
+                <div style="
+                    background: var(--gradient);
+                    height: 100%;
+                    width: 17%;
+                    border-radius: 10px;
+                    transition: width 0.5s;
+                "></div>
+            </div>
+            <p style="color: #666;">
+                ✅ 已完成：Git基础、分支操作、冲突处理、VS Code配置<br>
+                🚀 下一步：参与开源、搭建项目、进阶技巧
+            </p>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>
+            Made with ❤️ by 
+            <a href="https://github.com/你的用户名">你的名字</a>
+            · Hosted on 
+            <a href="https://pages.github.com">GitHub Pages</a>
+        </p>
+        <p style="margin-top: 8px; font-size: 0.85em;">
+            © 2026 · 30天GitHub挑战进行中 🔥
+        </p>
+    </footer>
+
 </body>
 </html>

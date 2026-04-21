@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的项目 - 你的名字</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html" class="nav-logo">👨‍💻 你的名字</a>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="about.html">关于</a>
+            <a href="projects.html" class="active">项目</a>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <div class="page-header">
+        <h1>💼 我的项目</h1>
+        <p>记录我学习路上创建的每一个项目</p>
+    </div>
+
+    <!-- 项目列表 -->
+    <div class="section">
+        <div class="card-grid">
+
+            <!-- 项目1：hello-github -->
+            <div class="card">
+                <div style="font-size: 2em; margin-bottom: 10px;">📚</div>
+                <h3>Hello GitHub</h3>
+                <p>我的第一个 GitHub 项目！
+                   记录了 30 天挑战的学习笔记、
+                   命令复习、分支练习等内容。</p>
+                <div class="tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">Markdown</span>
+                    <span class="tag">学习记录</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/你的用户名/hello-github"
+                       target="_blank"
+                       style="
+                           display: inline-block;
+                           padding: 8px 20px;
+                           background: var(--gradient);
+                           color: white;
+                           border-radius: 20px;
+                           text-decoration: none;
+                           font-size: 0.9em;
+                           font-weight: 500;
+                       ">
+                        📱 查看源码
+                    </a>
+                </div>
+            </div>
+
+            <!-- 项目2：个人网站 -->
+            <div class="card">
+                <div style="font-size: 2em; margin-bottom: 10px;">🌐</div>
+                <h3>个人主页</h3>
+                <p>用 GitHub Pages 搭建的个人网站，
+                   包含首页、关于我、项目展示
+                   三个页面，持续更新中！</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">GitHub Pages</span>
+                </div>
+                <div style="margin-top: 20px; display: flex; gap: 10px;">
+                    <a href="https://你的用户名.github.io"
+                       target="_blank"
+                       style="
+                           display: inline-block;
+                           padding: 8px 20px;
+                           background: var(--gradient);
+                           color: white;
+                           border-radius: 20px;
+                           text-decoration: none;
+                           font-size: 0.9em;
+                           font-weight: 500;
+                       ">
+                        🌐 访问网站
+                    </a>
+                    <a href="https://github.com/你的用户名/你的用户名.github.io"
+                       target="_blank"
+                       style="
+                           display: inline-block;
+                           padding: 8px 20px;
+                           background: transparent;
+                           color: var(--primary);
+                           border: 2px solid var(--primary);
+                           border-radius: 20px;
+                           text-decoration: none;
+                           font-size: 0.9em;
+                           font-weight: 500;
+                       ">
+                        📱 源码
+                    </a>
+                </div>
+            </div>
+
+            <!-- 占位：即将到来的项目 -->
+            <div class="card" style="
+                opacity: 0.5;
+                border-top-color: #ddd;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 200px;
+            ">
+                <div style="font-size: 2.5em; margin-bottom: 15px;">🚧</div>
+                <h3>更多项目</h3>
+                <p>正在 30 天挑战中，<br>
+                   更多项目即将到来！</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- GitHub 统计 -->
+    <div style="background: var(--light);">
+        <div class="section" style="text-align: center;">
+            <h2 class="section-title">📊 GitHub 统计</h2>
+            <img 
+                src="https://github-readme-stats.vercel.app/api?username=你的用户名&show_icons=true&theme=tokyonight&hide_border=true" 
+                alt="GitHub Stats"
+                style="max-width: 100%; border-radius: 10px;"
+            >
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>
+            Made with ❤️ by 
+            <a href="https://github.com/你的用户名">你的名字</a>
+            · Hosted on 
+            <a href="https://pages.github.com">GitHub Pages</a>
+        </p>
+    </footer>
+
+</body>
+</html>
